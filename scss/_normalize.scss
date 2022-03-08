@@ -1,0 +1,486 @@
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+========================================================================== */
+
+/**
+* 1. Correct the line height in all browsers.
+    (すべてのブラウザで行の高さを修正します。)
+* 2. Prevent adjustments of font size after orientation changes in
+*    IE on Windows Phone and in iOS.
+    (Windows PhoneおよびiOSのIEで向きを変更した後、フォントサイズが調整されないようにします。)
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	line-height: 1.15; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+========================================================================== */
+
+/**
+* Add the correct display in IE 9-.
+    (IE9-に正しい表示を追加します。)
+*/
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+picture{
+	display: block;
+}
+
+/**
+* Correct the font size and margin on `h1` elements within `section` and
+* `article` contexts in Chrome, Firefox, and Safari.
+    (Chrome、Firefox、Safariの `section`および` article`コンテキスト内の `h1`要素のフォントサイズとマージンを修正します。)
+*/
+
+h1 {
+	font-size: 2em;
+}
+
+/* Grouping content
+========================================================================== */
+
+/**
+* Add the correct display in IE 9-.
+    (IE9-に正しい表示を追加します。)
+* 1. Add the correct display in IE.
+*/
+
+figcaption,
+figure,
+main { /* 1 */
+	display: block;
+}
+
+/**
+* Add the correct margin in IE 8.
+    (IE8で正しいマージンを追加します。)
+*/
+
+figure {
+}
+
+/**
+* 1. Add the correct box sizing in Firefox.
+    (Firefoxで正しいボックスサイズを追加します。)
+* 2. Show the overflow in Edge and IE.
+    (EdgeとIEのオーバーフローを表示します。)
+*/
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+    (すべてのブラウザでフォントサイズの継承とスケーリングを修正します。)
+* 2. Correct the odd `em` font sizing in all browsers.
+    (すべてのブラウザで奇妙な `em`フォントサイズを修正します。)
+*/
+
+pre {
+	//font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+========================================================================== */
+
+/**
+* 1. Remove the gray background on active links in IE 10.
+    (IE10のアクティブなリンクの灰色の背景を削除します。)
+* 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+    (iOS8以降およびSafari8以降で下線が引かれたリンクのギャップを削除します。)
+*/
+
+a {
+	background-color: transparent; /* 1 */
+	-webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+* 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+    (Chrome57-およびFirefox39-で下の境界線を削除します。)
+* 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+    (Chrome、Edge、IE、Opera、Safariで正しいテキスト装飾を追加します。)
+*/
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+* Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+    (Safari6の次のルールで `bolder`の重複適用を防ぎます。)
+*/
+
+b,
+strong {
+	font-weight: inherit;
+}
+
+/**
+* Add the correct font weight in Chrome, Edge, and Safari.
+    (Chrome、Edge、Safariで正しいフォントの太さを追加します。)
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+* 1. Correct the inheritance and scaling of font size in all browsers.
+    (すべてのブラウザでフォントサイズの継承とスケーリングを修正します。)
+* 2. Correct the odd `em` font sizing in all browsers.
+    (すべてのブラウザで奇妙な `em`フォントサイズを修正します。)
+*/
+
+code,
+kbd,
+samp {
+	//font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+* Add the correct font style in Android 4.3-.
+    (Android4.3で正しいフォントスタイルを追加します-。)
+*/
+
+dfn {
+	font-style: italic;
+}
+
+/**
+* Add the correct background and color in IE 9-.
+    (IE9-で正しい背景と色を追加します。)
+*/
+
+mark {
+	background-color: #ff0;
+	color: #000;
+}
+
+/**
+* Add the correct font size in all browsers.
+    (すべてのブラウザで正しいフォントサイズを追加します。)
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+* Prevent `sub` and `sup` elements from affecting the line height in
+* all browsers.
+    (`sub`要素と` sup`要素がすべてのブラウザの行の高さに影響を与えないようにします。)
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content(埋め込まれたコンテンツ)
+========================================================================== */
+
+/**
+* Add the correct display in IE 9-.
+    (IE9-に正しい表示を追加します。)
+*/
+
+audio,
+video {
+	display: inline-block;
+}
+
+/**
+* Add the correct display in iOS 4-7.
+    (iOS4-7で正しいディスプレイを追加します。)
+*/
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+* Remove the border on images inside links in IE 10-.
+    (IE10のリンク内の画像の境界線を削除します。)
+*/
+
+img {
+	border-style: none;
+}
+
+/**
+* Hide the overflow in IE.
+    (IEのオーバーフローを非表示にします。)
+*/
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Forms(フォーム)
+========================================================================== */
+
+/**
+* Remove the margin in Firefox and Safari.
+    (FirefoxとSafariで余白を削除します。)
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	margin: 0;
+}
+
+/**
+* Show the overflow in IE.
+    (IEでオーバーフローを表示します。)
+* 1. Show the overflow in Edge.
+    (Edgeでオーバーフローを表示します。)
+*/
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+    (Edge、Firefox、およびIEでのテキスト変換の継承を削除します。)
+* 1. Remove the inheritance of text transform in Firefox.
+    (Firefoxでテキスト変換の継承を削除します。)
+*/
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+* 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+*    controls in Android 4.
+    (（2）Android4のネイティブの `audio`および` video`コントロールを破壊するWebKitのバグを防ぎます。)
+* 2. Correct the inability to style clickable types in iOS and Safari.
+    (iOSとSafariでクリック可能なタイプのスタイルを設定できない問題を修正しました。)
+*/
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+    Firefoxで内側の境界線とパディングを削除します。
+*/
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+    (前のルールで設定されていないフォーカススタイルを復元します。)
+*/
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+    (EdgeとIEのテキストの折り返しを修正します。)
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+    (IEの `fieldset`要素からの色の継承を修正します。)
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+    (すべてのブラウザで開発者が `fieldset`要素をゼロにしたときに開発者が追いつかないように、パディングを削除します。)
+*/
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+* 1. Add the correct display in IE 9-.
+    (IE9-に正しい表示を追加します。)
+* 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+    (Chrome、Firefox、Operaで正しい垂直方向の配置を追加します。)
+*/
+
+progress {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+
+/**
+* Remove the default vertical scrollbar in IE.
+    (IEのデフォルトの垂直スクロールバーを削除します。)
+*/
+
+textarea {
+	overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10-.
+    (IE10で正しいボックスサイズを追加します。)
+* 2. Remove the padding in IE 10-.
+    (IE10のパディングを削除します。)
+*/
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+    (Chromeのインクリメントボタンとデクリメントボタンのカーソルスタイルを修正しました。)
+*/
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+    (ChromeとSafariの奇妙な外観を修正します。)
+* 2. Correct the outline style in Safari.
+    (ChromeとSafariの奇妙な外観を修正します。)
+*/
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+    (macOSのChromeとSafariの内側のパディングとキャンセルボタンを削除します。)
+*/
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+    (iOSとSafariでクリック可能なタイプのスタイルを設定できない問題を修正しました。)
+* 2. Change font properties to `inherit` in Safari.
+    (Safariでフォントのプロパティを `inherit`に変更します。)
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive(Interactive)
+========================================================================== */
+
+/*
+* Add the correct display in IE 9-.
+    (IE9-に正しい表示を追加します。)
+* 1. Add the correct display in Edge, IE, and Firefox.
+    (Edge、IE、Firefoxに正しい表示を追加します。)
+*/
+
+details, /* 1 */
+menu {
+	display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+    (すべてのブラウザに正しい表示を追加します。)
+*/
+
+summary {
+	display: list-item;
+}
+
+/* Scripting(スクリプティング)
+========================================================================== */
+
+/**
+* Add the correct display in IE 9-.
+    (IE9-に正しい表示を追加します。)
+*/
+
+canvas {
+	display: inline-block;
+}
+
+/**
+* Add the correct display in IE.
+    (IEに正しい表示を追加します。)
+*/
+
+template {
+	display: none;
+}
+
+/* Hidden
+========================================================================== */
+
+/**
+* Add the correct display in IE 10-.
+    (IE10で正しい表示を追加します。)
+*/
+
+[hidden] {
+	display: none;
+}
